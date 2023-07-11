@@ -1,0 +1,23 @@
+ext {
+    // Versions
+    playServicesAdsIdentifierVersion = '18.0.1'
+    imaSdkVersion = '3.29.0'
+    playServicesCastVersion = '21.2.0'
+    bitmovinPlayerVersion = '3.39.0'
+    appcompat_version = "1.6.1"
+    activity_version = "1.6.1"
+    fragment_version = "1.5.5"
+
+    // Library dependencies
+    supportDependencies = [
+            appCompat: "androidx.appcompat:appcompat:$appcompat_version",
+            localbroadcastmanager: 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0',
+            gson: 'com.google.code.gson:gson:2.8.2',
+            androidx_activity_ktx: "androidx.activity:activity-ktx:$activity_version",
+            androidx_fragment_ktx: "androidx.fragment:fragment-ktx:$fragment_version"
+    ]
+
+    bitmovinPlayerDependencies = [
+            bitmovinPlayer: "com.bitmovin.player:player:${bitmovinPlayerVersion}"
+    ]
+}
